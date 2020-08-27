@@ -15,7 +15,7 @@ namespace AutoMall
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new 标题());
+            Application.Run(new LoginAct());
         }
     }
 }

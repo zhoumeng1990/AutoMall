@@ -57,6 +57,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CodeApplyAct.resx">
+      <DependentUpon>CodeApplyAct.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginAct.resx">
       <DependentUpon>LoginAct.cs</DependentUpon>
     </EmbeddedResource>

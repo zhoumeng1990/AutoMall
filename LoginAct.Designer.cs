@@ -1,6 +1,6 @@
 ﻿namespace AutoMall
 {
-    partial class 标题
+    partial class LoginAct
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -73,6 +73,7 @@
             this.label2.Size = new System.Drawing.Size(70, 12);
             this.label2.TabIndex = 3;
             this.label2.Text = "授权码申请";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -85,7 +86,7 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "订单支付";
             // 
-            // 标题
+            // LoginAct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -95,7 +96,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "标题";
+            this.Name = "LoginAct";
             this.Text = "店群之家";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

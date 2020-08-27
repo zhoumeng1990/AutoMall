@@ -9,11 +9,13 @@ using System.Windows.Forms;
 
 namespace AutoMall
 {
-    public partial class 标题 : Form
+    public partial class LoginAct : Form
     {
-        public 标题()
+        CodeApplyAct codeApplyAct;
+        public LoginAct()
         {
             InitializeComponent();
+            codeApplyAct = new CodeApplyAct();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,6 +36,12 @@ namespace AutoMall
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            codeApplyAct.Show();
         }
     }
 }

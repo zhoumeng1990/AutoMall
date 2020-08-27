@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.nodeIndexBox = new System.Windows.Forms.ComboBox();
+            this.userTimeBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.userIndexBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -76,6 +76,7 @@
             this.label2.Size = new System.Drawing.Size(60, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "返回";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -97,21 +98,22 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "节点数";
             // 
-            // comboBox1
+            // nodeIndexBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(281, 121);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 20);
-            this.comboBox1.TabIndex = 4;
+            this.nodeIndexBox.FormattingEnabled = true;
+            this.nodeIndexBox.Location = new System.Drawing.Point(281, 121);
+            this.nodeIndexBox.Name = "nodeIndexBox";
+            this.nodeIndexBox.Size = new System.Drawing.Size(241, 20);
+            this.nodeIndexBox.TabIndex = 4;
+            this.nodeIndexBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // comboBox2
+            // userTimeBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(281, 158);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(241, 20);
-            this.comboBox2.TabIndex = 6;
+            this.userTimeBox.FormattingEnabled = true;
+            this.userTimeBox.Location = new System.Drawing.Point(281, 158);
+            this.userTimeBox.Name = "userTimeBox";
+            this.userTimeBox.Size = new System.Drawing.Size(241, 20);
+            this.userTimeBox.TabIndex = 6;
             // 
             // label5
             // 
@@ -123,13 +125,13 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "使用时间";
             // 
-            // comboBox3
+            // userIndexBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(281, 195);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(241, 20);
-            this.comboBox3.TabIndex = 8;
+            this.userIndexBox.FormattingEnabled = true;
+            this.userIndexBox.Location = new System.Drawing.Point(281, 195);
+            this.userIndexBox.Name = "userIndexBox";
+            this.userIndexBox.Size = new System.Drawing.Size(241, 20);
+            this.userIndexBox.TabIndex = 8;
             // 
             // label6
             // 
@@ -308,11 +310,11 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.userIndexBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.userTimeBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.nodeIndexBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -330,10 +332,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox nodeIndexBox;
+        private System.Windows.Forms.ComboBox userTimeBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox userIndexBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox1;
