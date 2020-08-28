@@ -9,11 +9,22 @@ using System.Windows.Forms;
 
 namespace AutoMall
 {
-    public partial class main : Form
+    public partial class MainAct : Form
     {
-        public main()
+        public MainAct()
         {
             InitializeComponent();
+        }
+
+        private void main_Load(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

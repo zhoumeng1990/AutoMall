@@ -13,6 +13,7 @@ namespace AutoMall
     {
         CodeApplyAct codeApplyAct;
         OrderPayAct orderPayAct;
+        MainAct mainAct;
         public LoginAct()
         {
             InitializeComponent();
@@ -33,7 +34,9 @@ namespace AutoMall
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            mainAct = new MainAct();
+            this.Hide();
+            mainAct.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)

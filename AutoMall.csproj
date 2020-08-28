@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoSizeFormClass.cs" />
     <Compile Include="CodeApplyAct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,17 +56,23 @@
     <Compile Include="LoginAct.Designer.cs">
       <DependentUpon>LoginAct.cs</DependentUpon>
     </Compile>
-    <Compile Include="main.cs">
+    <Compile Include="MainAct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="main.Designer.cs">
-      <DependentUpon>main.cs</DependentUpon>
+    <Compile Include="MainAct.Designer.cs">
+      <DependentUpon>MainAct.cs</DependentUpon>
     </Compile>
     <Compile Include="OrderPayAct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="OrderPayAct.Designer.cs">
       <DependentUpon>OrderPayAct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanelEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PanelEx.Designer.cs">
+      <DependentUpon>PanelEx.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,11 +82,14 @@
     <EmbeddedResource Include="LoginAct.resx">
       <DependentUpon>LoginAct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="main.resx">
-      <DependentUpon>main.cs</DependentUpon>
+    <EmbeddedResource Include="MainAct.resx">
+      <DependentUpon>MainAct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OrderPayAct.resx">
       <DependentUpon>OrderPayAct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelEx.resx">
+      <DependentUpon>PanelEx.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
