@@ -85,6 +85,7 @@
             this.label3.Size = new System.Drawing.Size(57, 12);
             this.label3.TabIndex = 4;
             this.label3.Text = "订单支付";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // LoginAct
             // 

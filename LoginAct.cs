@@ -12,11 +12,14 @@ namespace AutoMall
     public partial class LoginAct : Form
     {
         CodeApplyAct codeApplyAct;
+        OrderPayAct orderPayAct;
         public LoginAct()
         {
             InitializeComponent();
             codeApplyAct = new CodeApplyAct();
+            orderPayAct = new OrderPayAct();
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -42,6 +45,12 @@ namespace AutoMall
         {
             this.Hide();
             codeApplyAct.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            orderPayAct.Show();
         }
     }
 }
